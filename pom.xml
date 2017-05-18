@@ -97,7 +97,7 @@
                         <include>**/*TestSuite.java</include>
                     </includes>
                     <argLine>-Xmx512m</argLine>
-                    <suiteXmlFiles>testng.xml</suiteXmlFiles>
+                    <!--<suiteXmlFiles>testng.xml</suiteXmlFiles>-->
                 </configuration>
                 <executions>
                     <execution>
