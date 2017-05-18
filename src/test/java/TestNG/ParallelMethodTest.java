@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -14,10 +15,10 @@ public class ParallelMethodTest{
     private WebDriver driver;
     @BeforeMethod
     public void beforeMethod() {
-        //System.setProperty("webdriver.gecko.driver", "/home/user/Downloads/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "/home/user/Downloads/geckodriver");
         if(driver == null){
-            //driver = new FirefoxDriver();
-            driver = new ChromeDriver();
+            driver = new FirefoxDriver();
+            //driver = new ChromeDriver();
         }
         driver.manage().window().setSize(new Dimension(800, 800));
         driver.get("http://google.com");
