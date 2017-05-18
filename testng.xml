@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test-method Suite"  parallel="tests" thread-count="4">
+  <test name="First test">
+    <!--<parameter name="browser" value="chrome"/>-->
+    <classes>
+      <class name="TestNG.ParallelMethodTest" />
+    </classes>
+  </test>
+  <!--<test name="Second test">-->
+    <!--<parameter name="browser" value="chrome"/>-->
+    <!--<classes>-->
+      <!--<class name="ParallelMethodTest2"/>-->
+    <!--</classes>-->
+  <!--</test>-->
+</suite>
